@@ -1,0 +1,5 @@
+x = input("PALINDROME FINDER: ")
+if x == x[ : :-1]:
+    print("PALINDROME")
+else:
+    print("NOT PALINDROME")
