@@ -1,0 +1,9 @@
+colour = ["RED","BLUE","GREEN","YELLOW","BLACK"]
+newcolour = input("Enter a colour you want to add to the list: ")
+index = int(input("Where do you want to insert this?"))
+if colour[index] == newcolour.upper():
+    print("Already exists there")
+else:
+    colour.insert(index,newcolour.upper())
+    print(colour)
+ 
