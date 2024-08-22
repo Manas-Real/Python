@@ -1,0 +1,3 @@
+listlol = ["Hi","ember","lies","lol","order"]
+for i in range(0,len(listlol)):
+    print(listlol[i][0], end="")
