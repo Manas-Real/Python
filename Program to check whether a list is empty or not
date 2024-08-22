@@ -1,0 +1,5 @@
+listlol = []
+if len(listlol) == 0:
+    print("Empty")
+else:
+    print("list not empty")
