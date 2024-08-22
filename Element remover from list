@@ -1,0 +1,8 @@
+listlol = ["A","B","C","D","E"]
+print(listlol)
+deleter = input("What do you want to delete from the list?")
+if deleter in listlol:
+    listlol.remove(deleter)
+    print(f"Here you go this is the list now: {listlol}")
+else:
+    print("Not in the list")
