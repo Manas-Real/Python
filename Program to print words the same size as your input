@@ -1,0 +1,10 @@
+listlol = ["valley","sympathetic","happen","loot","voice","waterfall","bishop","main","inflate"]
+count = 0
+finder = int(input("What length of words would you like to print?"))
+for i in range(0,len(listlol)):
+    if len(listlol[i]) == finder:
+       print(listlol[i], end=",")
+    if len(listlol[i]) > finder or len(listlol[i]) < finder:
+       count = count + 1
+    if count == len(listlol) - 1:
+        print("No words exist with that length ")
