@@ -1,0 +1,6 @@
+list = ["Hi",12,"bye","no","152"]
+count = 0
+for i in range(0,len(listlol)):
+    if type(listlol[i]) == str:
+        count = count + 1
+print(f"there are {count} many strings in this list")
