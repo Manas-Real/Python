@@ -1,0 +1,17 @@
+listlol1 = ["valley","sympathetic","happen","loot","voice","waterfall","bishop","main","inflate"]
+listlol2 = ["hi","bye","valley"]
+num = 0
+if len(listlol1) > len(listlol2):
+    num = len(listlol1)
+if len(listlol1) < len(listlol2):    
+    num = len(listlol2)
+if len(listlol1) == len(listlol2):
+    num = len(listlol1)
+for i in range(0,num):
+    if listlol1[i] in listlol2:
+        print("Exists in other list")
+        break
+    if listlol1[i] not in listlol2:
+        print("does not exist in other list")
+        break
+    
