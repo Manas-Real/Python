@@ -1,0 +1,12 @@
+listlol = [1,2,3,2,5,2,1,25,1,4,23,31,3,12,1,2]
+print(listlol)
+finder = int(input("What numbers frequency do you want to find out"))
+count = 0
+if finder in listlol:
+    for i in range(0,len(listlol)):
+        if listlol[i] == finder:
+            count = count + 1
+if finder not in listlol:
+    print("does not exist")
+print(f"{count} many numbers exist in this list")
+            
