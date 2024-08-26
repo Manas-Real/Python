@@ -1,0 +1,10 @@
+listlol = ["a","b","c","d","a","d","c"]
+inputlol = input("What element do you wanna know the frequency of?")
+count = 0
+if inputlol in listlol:
+    for i in range(0,len(listlol) - 1):
+        if listlol[i] == inputlol:
+            count = count + 1
+if inputlol not in listlol:
+    print("no element like that in the list")
+print(f"there are {count} many instances of {inputlol} in the list")
