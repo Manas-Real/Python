@@ -1,0 +1,12 @@
+def myFunc():
+    lol = int(input("Hi enter a number"))
+    rangeMAX = 1000
+    rangeMIN = 1
+    if lol > rangeMAX or lol < rangeMIN:
+        print("NOT IN RANGE")
+    if lol < rangeMAX and lol > rangeMIN:
+        print("IN RANGE")
+    if lol == rangeMAX or lol == rangeMIN:
+        print("Just close to being out of range")
+    
+myFunc()
