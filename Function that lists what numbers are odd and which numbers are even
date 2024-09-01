@@ -1,0 +1,13 @@
+counter = eval(input("hi"))
+listloleven = []
+listlolodd = []
+def myFunc():
+    for i in range(0,counter):
+        wow = eval(input("Enter a number"))
+        if wow % 2 == 0:
+            listloleven.append(wow)
+        else:
+            listlolodd.append(wow)
+    print(f"The numbers which are even are: {listloleven}")
+    print(f"The numbers which are odd are: {listlolodd}")
+myFunc()
