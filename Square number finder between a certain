@@ -1,0 +1,10 @@
+listlol = [21,32,521,12,32,25,36,9,1221]
+range1 = int(input("enter in your base value"))
+range2 = int(input("enter in your max value"))
+def myFunc():
+    for i in listlol:
+        if (i**0.5).is_integer() and i in range(range1,range2):
+            print(i ," is a square between the range!")
+        else:
+            print(i ," is not a sqaure number between the range")
+myFunc()
