@@ -1,0 +1,9 @@
+diction = {
+}
+def myFunc():
+    lol = int(input("Hi"))
+    for i in range(1,lol + 1):
+        wow = i * i
+        diction.update({i:wow})
+    print(diction)
+myFunc()
