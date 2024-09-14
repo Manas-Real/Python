@@ -1,0 +1,20 @@
+def point():
+    x = float(input("Enter x coordinate"))
+    y = float(input("Enter y coordinate"))
+    x2 = float(input("Enter x y  coordinate"))
+    y2 = float(input("Enter y x coordinate"))
+    if x > 0 and y > 0:
+        print("Its in quadrant I")
+    elif x < 0 and y > 0:
+        print("Its in quadrant II")
+    elif x > 0 and y < 0:
+        print("Its in quadrant III")
+    elif x < 0 and y < 0:
+        print("Its in quadrant IV")
+    else:
+        print("origin")
+    distance = ((y2 - y)**2 + (x2 - x)**2)**0.5
+    print(f"Distance between the two points are: {distance}")
+point()
+    
+        
