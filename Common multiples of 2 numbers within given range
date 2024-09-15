@@ -1,0 +1,15 @@
+def func():
+    range1 = int(input("enter a range: "))
+    range2 = int(input("enter a range: "))
+    numb1 = int(input("Enter a number 1: "))
+    numb2 = int(input("Enter a number 2: "))
+    print("Ok here are the numbers that are divisible by 7 and 9")
+    count = 0
+    for i in range(range1,range2,1):
+        if i % numb1 == 0 and i % numb2 == 0:
+            print(i)
+            count += 1
+        elif i == range2 - 1 and count == 0:
+            print("NEVERMIND there were no multiples")
+    print(f"There were these many common multiples: {count}")
+func()
