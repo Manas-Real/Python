@@ -1,0 +1,4 @@
+a = int(input("Enter in a: "))
+b = int(input("Enter in b: "))
+hypotenuse = (a**2 + b**2)**0.5
+print("Hypotenuse is" , hypotenuse)
