@@ -1,0 +1,12 @@
+def func():
+    lol = input("Hi enter a sentence: ")
+    lol = lol.split(" ")
+    lol = set(lol)
+    lol2 = input("Hi enter a sentence: ")
+    lol2 = lol2.split(" ")
+    lol2 = set(lol2)
+    inter = lol.intersection(lol2)
+    union = lol.union(lol2)
+    print(inter)
+    print(union)
+func()
