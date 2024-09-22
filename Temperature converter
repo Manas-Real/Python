@@ -1,0 +1,26 @@
+def myfunc():
+    inputlol = input("Hi enter in what you want to convert to?: ")
+    value = input("What kind of value are you inputting in? K,C or F?: ")
+    number = float(input("Enter in your number that you want to convert: "))
+    if inputlol == "Celcius":
+        if value == "Kelvin":
+            answer = number - 273.15
+            print(answer)
+        if value == "Farenheit":
+            answer = (number - 32) * 5/9
+            print(answer)
+    if inputlol == "Farenheit":
+        if value == "Celcius":
+            answer = (number * 9/5) + 32
+            print(answer)
+        if value == "Kelvin":
+            answer = (number - 273.15) * 9/5 + 32    
+            print(answer)
+    if inputlol == "Kelvin":
+        if value == "Celcius":
+            answer = number + 273.15
+            print(answer)
+        if value == "Farenheit":
+            answer = (number - 32) * 5/9 + 273.15
+            print(answer)
+myfunc()
