@@ -1,0 +1,5 @@
+listlol = ["filler","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+rangelol = int(input("Enter your range in: "))
+if rangelol < len(listlol):
+    for i in range(0,rangelol):
+        print(listlol[i] * i)
