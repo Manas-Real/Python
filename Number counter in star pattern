@@ -1,0 +1,6 @@
+listlol = []
+rangelol = int(input("Enter your range in: "))
+for i in range(1,rangelol):
+    if i not in listlol:
+        listlol.append(i)
+        print(listlol)
