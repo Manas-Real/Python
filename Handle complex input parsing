@@ -1,0 +1,8 @@
+try:
+    user_input = input("Enter a comma-separated list of numbers: ")
+    num_list = [int(num) for num in user_input.split(',')]
+    print(f"Valid integer list: {num_list}")
+except ValueError:
+    print("Error: Some elements in the input are not valid integers.")
+finally:
+    print("Input parsing complete.")
