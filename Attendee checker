@@ -1,0 +1,23 @@
+attendees = ["Manas"]
+def add_attendee():
+    ask = input("Whats the name of the attendee you would like to add?")
+    attendees.append(ask)
+def remove_attendee():
+    try:
+        ask = input("Whats the name of the attendee you would like to remove?")
+        removal = attendees.index(ask)
+        attendees.remove(attendees[removal])
+    except:
+        print("Person with that name does not exist")
+def view_attendees():
+    print(f"Alright here are all the attendees so far {attendees}")
+ask = input("What would you like to do? Add attendees,remove attendees,view attendees or nothing?")
+if ask != "Nothing":
+    if ask == "Add Attendees":
+        add_attendee()
+    if ask == "Remove Attendees":
+        remove_attendees()
+    if ask == "View Attendees":
+        view_attendees()
+else:
+    print("Ok")
