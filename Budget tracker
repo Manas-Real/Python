@@ -1,0 +1,22 @@
+budget = 1000
+def spend():
+    global budget
+    ask = int(input("How much does the item cost"))
+    if ask > budget:
+        print("You dont have enough money to buy the item")
+    else:
+        budget -= ask
+        print(f"You have {budget} amounts of money left now")
+def add():
+    global budget
+    ask = int(input("How much do you want to deposit?"))
+    if ask <= 0:
+        print("Insufficent funds")
+    else:
+        budget += ask
+        print(f"You have {budget} amounts of money now")
+ask = input("Would you like to buy an item or add to your budget?: ")
+if ask == "Add to budget":
+    add()
+if ask == "Buy an item":
+    spend()
