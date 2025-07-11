@@ -1,0 +1,8 @@
+import time
+def get_time(func):
+    def wrapper(*args, **kwargs):
+        a = time.time()
+        func(*args,**kwargs)
+        b = time.time()
+        print(f"Execution time for {func.__name__}: {b-a} seconds.")
+    return wrapper
