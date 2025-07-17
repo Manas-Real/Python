@@ -1,0 +1,11 @@
+
+a = len(arr)
+swap = False
+for i in range(a):
+    for j in range(a - i - 1):
+        if arr[j] > arr[j + 1]:
+            arr[j + 1], arr[j] = arr[j], arr[j + 1]
+            swap = True
+    if not swap:
+        break
+print(arr)
